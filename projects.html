@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case  Studies | UPTOPIA - Community-Driven Experiences</title>
-    <meta name="description" content="Discover how UPTOPIA is transforming communities through curated experiences and meaningful connections.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    
     <style>
+
+        
         :root {
             --primary: #38000A;
             --secondary: #4ecdc4;
@@ -37,86 +33,15 @@
             font-weight: 600;
         }
         
-        /* Header & Navigation */
-        .navbar {
-            background-color: var(--comy);
-            box-shadow: var(--comy);
-            padding: 15px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
         
-        .navbar.scrolled {
-            padding: 10px 0;
-            background-color: var(--light);
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            font-weight: 700;
-            color: #ffffff;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo i {
-            margin-right: 8px;
-            color: #ffffff;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-links li {
-            margin-left: 30px;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: 500;
             transition: color 0.3s ease;
             position: relative;
         }
+
+
         
-        .nav-links a:hover {
-            color: #ffffff;
-        }
-        
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--light);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        
+    
+         
         .btn {
             display: inline-block;
             padding: 12px 28px;
@@ -687,76 +612,9 @@
 
 
     <!-- Navigation -->
-    <nav id="navbar" style="position: sticky; top: 0; background:var(--comy); z-index: 1000; border-bottom: 1px solid #333; padding: 1rem 0; font-family: Arial, sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem; background-color: var(--comy);" >
-            
-            <!-- Logo -->
-            <a href="#" style="font-size: 1.5rem; font-weight: bold; color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; background:var(--comy);">
-                
-            </a>
-    
-            <!-- Hamburger Button -->
-            <button onclick="toggleMenu()" style="font-size: 1.5rem; background: transparent; border: none; cursor: pointer; display: none; color: white;" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-           <!-- navigation links -->
 
-                  <nav class="navbar navbar-expand-lg navbar-light py-3" style="background-color: #E30B5C;">
-        <div class="container px-5"><a class="navbar-brand" href="index.html"><span class="fw-bolder text-white">Deep rovia</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-            
 
     
-    
-
-    <!-- Toggle Script -->
-    <script>
-      function toggleMenu() {
-        const links = document.getElementById('nav-links');
-        if (links.style.display === 'flex' || links.style.display === '') {
-          links.style.display = 'none';
-        } else {
-          links.style.display = 'flex';
-          links.style.flexDirection = 'column';
-          links.style.background = '#000000';
-          links.style.position = 'absolute';
-          links.style.top = '60px';
-          links.style.right = '1rem';
-          links.style.padding = '1rem';
-          links.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
-          links.style.zIndex = '999';
-        }
-      }
-
-      // Responsive behavior
-      function handleResize() {
-        const links = document.getElementById('nav-links');
-        const toggle = document.getElementById('menu-toggle');
-        if (window.innerWidth <= 768) {
-          toggle.style.display = 'block';
-          links.style.display = 'none';
-        } else {
-          toggle.style.display = 'none';
-          links.style.display = 'flex';
-          links.style.flexDirection = 'row';
-          links.style.position = 'static';
-          links.style.boxShadow = 'none';
-        }
-      }
-
-      window.addEventListener('resize', handleResize);
-      window.addEventListener('load', handleResize);
-    </script>
     
     <!-- Hero Section -->
     <section class="hero">
